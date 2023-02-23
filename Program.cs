@@ -1,10 +1,28 @@
-﻿namespace automotive
+﻿using automotive.Classes;
+using System.Drawing;
+
+namespace automotive
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            ICarModel car = new CarModel()
+            {
+                Name = "Lamborghini",
+                Model = "Aventador",
+                Color = Color.Black,
+                RadCount = 4
+            };
+
+            if (car.CheckCar())
+            {
+                car.CarInfo();
+            }
+            else
+            {
+                car.CarErrors();
+            }
         }
     }
 }
