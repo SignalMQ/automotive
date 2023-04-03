@@ -15,7 +15,8 @@ namespace automotive
             
             foreach (var model in carModels)
             {
-                model.BreakRad(2);
+                model.BreakRad(0); //специально сломаем машину
+
                 if (model.CheckCar())
                 {
                     model.CarInfo();

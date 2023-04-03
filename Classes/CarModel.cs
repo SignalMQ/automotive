@@ -37,9 +37,9 @@ namespace automotive.Classes
 
             if (_name != null) ChecksCount++;
             if (_model != null) ChecksCount++;
-            if (RadCount != BrokenRadCount && RadCount > BrokenRadCount) ChecksCount++;
+            if (BrokenRadCount == 0 && RadCount > 0) ChecksCount++;
 
-            return ChecksCount >= 3;
+            return ChecksCount == 3 ? true : false;
         }
         /// <summary>
         /// Недочёты найденные в машине
@@ -48,9 +48,9 @@ namespace automotive.Classes
         {
             Line();
             if (_name == null) Console.WriteLine("Нет названия у машины!");
-            if (_model == null) Console.WriteLine("Нет модели у машины!");
-            if (RadCount != 0 && BrokenRadCount != 0) Console.WriteLine($"У машины не достают колёса: {RadCount - BrokenRadCount}");
-            else if(RadCount == 0) Console.WriteLine("У машины нет колёс!");
+            else if (_model == null) Console.WriteLine("Нет модели у машины!");
+            else if (RadCount == BrokenRadCount) Console.WriteLine("У машины нет колёс!");
+            if (RadCount > 0 && BrokenRadCount > 0 && RadCount != BrokenRadCount) Console.WriteLine($"У машины не достают колёса: {RadCount - BrokenRadCount}");
             Line();
         }
         /// <summary>
@@ -83,7 +83,7 @@ namespace automotive.Classes
         /// </summary>
         public void BreakRad(int count)
         {
-            if (count < RadCount)
+            if (count <= RadCount)
             {
                 BrokenRadCount += count;
             }
