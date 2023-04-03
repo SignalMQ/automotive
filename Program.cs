@@ -7,21 +7,23 @@ namespace automotive
     {
         static void Main()
         {
-            ICarModel car = new CarModel()
+            List<CarModel> carModels = new()
             {
-                Name = "Lamborghini",
-                Model = "Aventador",
-                Color = Color.Black,
-                RadCount = 4
+                new CarModel("Lamborghini", "Aventador", Fuel.Petrol, 2023, Color.White),
+                new CarModel("Tesla", "S3", Fuel.Electric, 2017, Color.Black)
             };
-
-            if (car.CheckCar())
+            
+            foreach (var model in carModels)
             {
-                car.CarInfo();
-            }
-            else
-            {
-                car.CarErrors();
+                model.BreakRad(2);
+                if (model.CheckCar())
+                {
+                    model.CarInfo();
+                }
+                else
+                {
+                    model.CarErrors();
+                }
             }
         }
     }
