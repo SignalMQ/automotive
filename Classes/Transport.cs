@@ -13,7 +13,7 @@
         {
             if (_value > MAX_VALUE | _value < MIN_VALUE)
             {
-                throw new ArgumentOutOfRangeException(); //получили такое искючение, потому что год был не в диапазоне MIN_VALUE и MAX_VALUE
+                throw new ArgumentOutOfRangeException($"Значение {_value} не входит в диапазон {MIN_VALUE} и {MAX_VALUE}");
             }
             else
             {

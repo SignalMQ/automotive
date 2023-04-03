@@ -69,7 +69,6 @@ namespace automotive.Classes
             Console.WriteLine($"Цвет             => {Color.Name}");
             Line();
         }
-
         private static void Line() //наложение линии-разделителья
         {
             for (int i = 0; i < Console.BufferWidth; i++) //Отрисовываем до конца консоли
@@ -77,7 +76,6 @@ namespace automotive.Classes
                 Console.Write("=");
             }
         }
-
         /// <summary>
         /// Ломаем колёса машины
         /// </summary>
