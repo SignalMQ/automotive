@@ -1,10 +1,16 @@
-﻿namespace automotive.Classes
+﻿using System.Drawing;
+
+namespace automotive.Classes
 {
-    public class MotoModel : Transport
+    public class MotoModel : CarModel
     {
-        public MotoModel(string Name, string Model, Fuel Fuel, Year Year): base(Name, Model, Fuel, Year)
+        public MotoModel(string name, string model, Fuel fuel, Year year, Color color, int radCount = 2) : base(name, model, fuel, year, color)
         {
-            
+            Name  = name;
+            Model = model;
+            Fuel  = fuel;
+            Year  = year;
+            Color = color;
         }
     }
 }

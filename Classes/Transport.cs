@@ -5,7 +5,8 @@
     /// </summary>
     public struct Year
     {
-        private int Value;
+        private int value;
+
         private const int MAX_VALUE = 9999;
         private const int MIN_VALUE = 1000;
 
@@ -17,8 +18,13 @@
             }
             else
             {
-                return new Year { Value = _value };
+                return new Year { value = _value };
             }
+        }
+
+        public static explicit operator int( Year _value )
+        {
+            return _value.value;
         }
     }
     /// <summary>
@@ -36,17 +42,9 @@
     /// </summary>
     public class Transport
     {
-        public string? _name { get; set; }  //имя транспорта, например:    LeapMotor
-        public string? _model { get; set; } //модель транспорта, например: C11
-        public Fuel _fuel { get; set; }     //тип горючего, например:      Electric
-        public Year _year { get; set; }     //год выпуска, например:       2023
-
-        public Transport(string name, string model, Fuel fuel, Year year)
-        {
-            _name = name;
-            _model = model;
-            _fuel = fuel;
-            _year = year;
-        }
+        public string? Name { get; set; }  //имя транспорта, например:    LeapMotor
+        public string? Model { get; set; } //модель транспорта, например: C11
+        public Fuel Fuel { get; set; }     //тип горючего, например:      Electric
+        public Year Year { get; set; }     //год выпуска, например:       2023
     }
 }

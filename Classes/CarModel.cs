@@ -5,16 +5,21 @@ namespace automotive.Classes
     /// <summary>
     /// Базовый класс для автомобилья
     /// </summary>
-    public class CarModel: Transport
+    public class CarModel : Transport
     {
         /// <summary>
         /// Конструктор со свойствами для автомобилья
         /// </summary>
-        public CarModel(string Name, string Model, Fuel Fuel, Year Year, Color Color, int RadCount = 4) : base(Name, Model, Fuel, Year)
+        public CarModel(string name, string model, Fuel fuel, Year year, Color color, int radCount = 4)
         {
-            this.Color = Color;
-            this.RadCount = RadCount;
+            Name     = name;
+            Model    = model;
+            Fuel     = fuel;
+            Year     = year;
+            Color    = color;
+            RadCount = radCount;
         }
+
         /// <summary>
         /// Количество колёс в машине
         /// </summary>
@@ -35,8 +40,8 @@ namespace automotive.Classes
         {
             byte ChecksCount = 0; //Шаг при тестировании
 
-            if (_name != null) ChecksCount++;
-            if (_model != null) ChecksCount++;
+            if (Name          != null) ChecksCount++;
+            if (Model         != null) ChecksCount++;
             if (BrokenRadCount == 0 && RadCount > 0) ChecksCount++;
 
             return ChecksCount == 3 ? true : false;
@@ -47,9 +52,9 @@ namespace automotive.Classes
         public void CarErrors()
         {
             Line();
-            if (_name == null) Console.WriteLine("Нет названия у машины!");
-            else if (_model == null) Console.WriteLine("Нет модели у машины!");
-            else if (RadCount == BrokenRadCount) Console.WriteLine("У машины нет колёс!");
+            if (Name                                            == null) Console.WriteLine("Нет названия у машины!");
+            else if (Model                                      == null) Console.WriteLine("Нет модели у машины!");
+            else if (RadCount                                   == BrokenRadCount) Console.WriteLine("У машины нет колёс!");
             if (RadCount > 0 && BrokenRadCount > 0 && RadCount != BrokenRadCount) Console.WriteLine($"У машины не достают колёса: {RadCount - BrokenRadCount}");
             Line();
         }
@@ -60,9 +65,9 @@ namespace automotive.Classes
         {
             Line();
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine($"Название         => {_name}");
+            Console.WriteLine($"Название         => {Name}");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Модель           => {_model}");
+            Console.WriteLine($"Модель           => {Model}");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Количество колёс => {RadCount}");
             Console.ForegroundColor = ConsoleColor.White;
