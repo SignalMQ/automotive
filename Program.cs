@@ -9,13 +9,13 @@ namespace automotive
         {
             List<CarModel> carModels = new()
             {
-                new CarModel("Lamborghini", "Aventador", Fuel.Petrol, 12121, Color.White),
+                new CarModel("Lamborghini", "Aventador", Fuel.Petrol, 12121, Color.White), // тест 1: год машины увеличим, чем допустимое значение, чтобы получить исключение
                 new CarModel("Tesla", "S3", Fuel.Electric, 2017, Color.Black)
             };
             
             foreach (var model in carModels)
             {
-                model.BreakRad(45); //специально сломаем машину
+                model.BreakRad(45); //тест 2: увеличим значение превышающее, чтобы получить исключение
 
                 if (model.CheckCar())
                 {
