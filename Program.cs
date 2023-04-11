@@ -15,7 +15,10 @@ namespace automotive
 
             foreach (var model in Models)
             {
-                model.ShowInfo();
+                if (model.Check())
+                {
+                    model.ShowInfo();
+                }
             }
         }
     }

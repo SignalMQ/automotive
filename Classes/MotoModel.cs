@@ -7,11 +7,6 @@ namespace automotive.Classes
         /// <summary>
         /// Базовый конструктор для класса мотоцикла
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="model"></param>
-        /// <param name="fuel"></param>
-        /// <param name="color"></param>
-        /// <param name="radCount"></param>
         public MotoModel(string name, string model, Fuel fuel, Year year, Color color, int radCount = 2)
         {
 

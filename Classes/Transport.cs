@@ -1,7 +1,8 @@
 ﻿namespace automotive.Classes
 {
     /// <summary>
-    /// Тип данных для используемый в качестве года выпуска транспорта
+    /// Тип данных для используемый в качестве года выпуска транспорта.
+    /// Принимает значение от 1000 до 9999.
     /// </summary>
     public struct Year
     {
@@ -37,6 +38,9 @@
         Electric,
         Metan
     }
+    /// <summary>
+    /// Тип перечислений для определения типа коробки передач
+    /// </summary>
     public enum Transmission
     {
         Mechanic,
@@ -55,7 +59,14 @@
         public Year Year { get; set; }     //год выпуска, например:        2023
         public Transmission Transmission { get; set; } //тип КП, например: Auto
 
+        /// <summary>
+        /// Проверка состояния объекта
+        /// </summary>
+        /// <returns>bool</returns>
         public abstract bool Check();
+        /// <summary>
+        /// Отображает информацию об объекте
+        /// </summary>
         public abstract void ShowInfo();
     }
 }
