@@ -45,7 +45,7 @@ namespace automotive.Classes
             if (Model         != null) ChecksCount++;
             if (BrokenRadCount == 0 && RadCount > 0) ChecksCount++;
 
-            return ChecksCount == 3 ? true : false;
+            return ChecksCount == 3;
         }
         /// <summary>
         /// Недочёты найденные в машине
