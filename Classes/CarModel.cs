@@ -36,7 +36,7 @@ namespace automotive.Classes
         /// Проверка автомобилья на соответствие
         /// </summary>
         /// <returns>True, False</returns>
-        public bool CheckCar()
+        public override bool Check()
         {
             byte ChecksCount = 0; //Шаг при тестировании
 
@@ -61,7 +61,7 @@ namespace automotive.Classes
         /// <summary>
         /// Выводим информацию об машине
         /// </summary>
-        public void CarInfo()
+        public override void ShowInfo()
         {
             Line();
             Console.ForegroundColor = ConsoleColor.Blue;

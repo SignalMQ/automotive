@@ -2,15 +2,16 @@
 
 namespace automotive.Classes
 {
-    public class MotoModel : CarModel
+    public class MotoModel : Transport
     {
-        public MotoModel(string name, string model, Fuel fuel, Year year, Color color, int radCount = 2) : base(name, model, fuel, year, color)
+        public override bool Check()
         {
-            Name  = name;
-            Model = model;
-            Fuel  = fuel;
-            Year  = year;
-            Color = color;
+            throw new NotImplementedException(); //заглушка
+        }
+
+        public override void ShowInfo()
+        {
+            throw new NotImplementedException(); //заглушка
         }
     }
 }

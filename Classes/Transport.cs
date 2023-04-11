@@ -5,7 +5,7 @@
     /// </summary>
     public struct Year
     {
-        private int value;
+        int value;
 
         private const int MAX_VALUE = 9999;
         private const int MIN_VALUE = 1000;
@@ -40,11 +40,14 @@
     /// <summary>
     /// Базовый класс для транспорта
     /// </summary>
-    public class Transport
+    public abstract class Transport
     {
         public string? Name { get; set; }  //имя транспорта, например:    LeapMotor
         public string? Model { get; set; } //модель транспорта, например: C11
         public Fuel Fuel { get; set; }     //тип горючего, например:      Electric
         public Year Year { get; set; }     //год выпуска, например:       2023
+
+        public abstract bool Check();
+        public abstract void ShowInfo();
     }
 }
