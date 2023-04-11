@@ -22,7 +22,7 @@
             }
         }
 
-        public static explicit operator int( Year _value )
+        public static explicit operator int(Year _value)
         {
             return _value.value;
         }
@@ -37,15 +37,23 @@
         Electric,
         Metan
     }
+    public enum Transmission
+    {
+        Mechanic,
+        Auto,
+        Semi_auto,
+        None
+    }
     /// <summary>
     /// Базовый класс для транспорта
     /// </summary>
     public abstract class Transport
     {
-        public string? Name { get; set; }  //имя транспорта, например:    LeapMotor
-        public string? Model { get; set; } //модель транспорта, например: C11
-        public Fuel Fuel { get; set; }     //тип горючего, например:      Electric
-        public Year Year { get; set; }     //год выпуска, например:       2023
+        public string? Name { get; set; }  //имя транспорта, например:     LeapMotor
+        public string? Model { get; set; } //модель транспорта, например:  C11
+        public Fuel Fuel { get; set; }     //тип горючего, например:       Electric
+        public Year Year { get; set; }     //год выпуска, например:        2023
+        public Transmission Transmission { get; set; } //тип КП, например: Auto
 
         public abstract bool Check();
         public abstract void ShowInfo();

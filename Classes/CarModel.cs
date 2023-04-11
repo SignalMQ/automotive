@@ -10,14 +10,15 @@ namespace automotive.Classes
         /// <summary>
         /// Конструктор со свойствами для автомобилья
         /// </summary>
-        public CarModel(string name, string model, Fuel fuel, Year year, Color color, int radCount = 4)
+        public CarModel(string name, string model, Fuel fuel, Transmission transmission, Year year, Color color, int radCount = 4)
         {
-            Name     = name;
-            Model    = model;
-            Fuel     = fuel;
-            Year     = year;
-            Color    = color;
-            RadCount = radCount;
+            Name         = name;
+            Model        = model;
+            Fuel         = fuel;
+            Transmission = transmission;
+            Year         = year;
+            Color        = color;
+            RadCount     = radCount;
         }
 
         /// <summary>
@@ -64,14 +65,16 @@ namespace automotive.Classes
         public override void ShowInfo()
         {
             Line();
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine($"Название         => {Name}");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Модель           => {Model}");
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"Количество колёс => {RadCount}");
+            Console.WriteLine($"Название            => {Name}");
+            Console.WriteLine($"Модель              => {Model}");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Год выпуска         => {(int)Year}");
+            Console.WriteLine($"Тип каробки передач => {Transmission}");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"Количество колёс    => {RadCount}");
+            Console.WriteLine($"Цвет                => {Color.Name}");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine($"Цвет             => {Color.Name}");
             Line();
         }
         private static void Line() //наложение линии-разделителья

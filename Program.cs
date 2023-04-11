@@ -7,24 +7,15 @@ namespace automotive
     {
         static void Main()
         {
-            List<CarModel> carModels = new()
+            List<Transport> Models = new()
             {
-                new CarModel("Lamborghini", "Aventador", Fuel.Petrol, 2023, Color.White), // тест 1: год машины увеличим, чем допустимое значение, чтобы получить исключение
-                new CarModel("Tesla", "S3", Fuel.Electric, 2017, Color.Black)
+                new CarModel("Lamborghini", "Aventador", Fuel.Petrol, Transmission.Auto, 2023, Color.White),
+                new MotoModel("BMW", "S 1000 RR", Fuel.Petrol, 2023, Color.Black, 2)
             };
-            
-            foreach (var model in carModels)
-            {
-                model.BreakRad(0); //тест 2: увеличим значение превышающее, чтобы получить исключение
 
-                if (model.Check())
-                {
-                    model.ShowInfo();
-                }
-                else
-                {
-                    model.CarErrors();
-                }
+            foreach (var model in Models)
+            {
+                model.ShowInfo();
             }
         }
     }
