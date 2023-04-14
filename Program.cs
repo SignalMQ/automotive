@@ -7,8 +7,6 @@ namespace automotive
     {
         static void Main()
         {
-            Engine engine = 100;
-            
             List<Transport> Models = new()
             {
                 new CarModel ("Lamborghini", "Aventador", Fuel.Petrol, Transmission.Auto, 2023, Color.White),

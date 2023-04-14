@@ -1,4 +1,6 @@
-﻿namespace automotive.Classes
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace automotive.Classes
 {
     /// <summary>
     /// Тип данных для используемый в качестве года выпуска транспорта.
@@ -53,11 +55,41 @@
     /// </summary>
     public abstract class Transport
     {
-        public string? Name { get; set; }  //имя транспорта, например:     LeapMotor
-        public string? Model { get; set; } //модель транспорта, например:  C11
-        public Fuel Fuel { get; set; }     //тип горючего, например:       Electric
-        public Year Year { get; set; }     //год выпуска, например:        2023
-        public Transmission Transmission { get; set; } //тип КП, например: Auto
+        private string?      _name;         //имя транспорта, например:    LeapMotor
+        private string?      _model;        //модель транспорта, например: C11
+        private Fuel         _fuel;         //тип горючего, например:      Electric
+        private Year         _year;         //год выпуска, например:       2023
+        private Transmission _transmission; //тип КП, например:            Auto
+        
+        public string? Name 
+        { 
+            get { return _name;  }
+            set { _name = value; } 
+        }
+
+        public string? Model 
+        { 
+            get { return _model; }
+            set { _model = value;}
+        } 
+
+        public Fuel Fuel 
+        {
+            get { return _fuel;  }
+            set { _fuel = value; }
+        }
+
+        public Year Year 
+        { 
+            get { return _year;  }
+            set { _year = value; }
+        }     
+
+        public Transmission Transmission 
+        { 
+            get { return _transmission;  }
+            set { _transmission = value; }
+        } 
 
         /// <summary>
         /// Проверка состояния объекта
