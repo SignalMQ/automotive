@@ -13,21 +13,21 @@ namespace automotive.Classes
         private const int MAX_VALUE = 9999;
         private const int MIN_VALUE = 1000;
 
-        public static implicit operator Year(int _value)
+        public static implicit operator Year(int Value)
         {
-            if (_value > MAX_VALUE | _value < MIN_VALUE)
+            if (Value > MAX_VALUE | Value < MIN_VALUE)
             {
-                throw new ArgumentOutOfRangeException($"Значение {_value} не входит в диапазон {MIN_VALUE} и {MAX_VALUE}");
+                throw new ArgumentOutOfRangeException($"Значение {Value} не входит в диапазон {MIN_VALUE} и {MAX_VALUE}");
             }
             else
             {
-                return new Year { value = _value };
+                return new Year { value = Value };
             }
         }
 
-        public static explicit operator int(Year _value)
+        public static explicit operator int(Year Value)
         {
-            return (int)_value.value;
+            return (int)Value.value;
         }
     }
     /// <summary>
