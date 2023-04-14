@@ -8,7 +8,7 @@ namespace automotive.Classes
     /// </summary>
     public struct Year
     {
-        int value;
+        private int value;
 
         private const int MAX_VALUE = 9999;
         private const int MIN_VALUE = 1000;
@@ -27,7 +27,7 @@ namespace automotive.Classes
 
         public static explicit operator int(Year _value)
         {
-            return _value.value;
+            return (int)_value.value;
         }
     }
     /// <summary>
