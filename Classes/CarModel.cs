@@ -21,18 +21,28 @@ namespace automotive.Classes
             RadCount     = radCount;
         }
 
-        /// <summary>
-        /// Количество колёс в машине
-        /// </summary>
-        public int RadCount { get; set; }
-        /// <summary>
-        /// Цвет машины. По умолчания белый.
-        /// </summary>
-        public Color Color { get; set; } = Color.White;
-        /// <summary>
-        /// Количество сломанных колёс
-        /// </summary>
-        private int BrokenRadCount { get; set; }
+        private int   _radCount;            // Количество колёс в машине
+        private Color _color = Color.White; // Цвет машины. По умолчания белый.
+        private int   _brokenRadCount;      // Количество сломанных колёс
+
+        public int RadCount 
+        { 
+            get { return _radCount;  }
+            set { _radCount = value; }
+        }
+
+        public Color Color 
+        { 
+            get { return _color;  }
+            set { _color = value; }
+        }
+
+        private int BrokenRadCount
+        {
+            get { return _brokenRadCount;  }
+            set { _brokenRadCount = value; }
+        }
+
         /// <summary>
         /// Проверка автомобилья на соответствие
         /// </summary>
@@ -47,6 +57,7 @@ namespace automotive.Classes
 
             return ChecksCount == 3;
         }
+
         /// <summary>
         /// Недочёты найденные в машине
         /// </summary>
@@ -59,6 +70,7 @@ namespace automotive.Classes
             if (RadCount > 0 && BrokenRadCount > 0 && RadCount != BrokenRadCount) Console.WriteLine($"У машины не достают колёса: {RadCount - BrokenRadCount}");
             Line();
         }
+
         /// <summary>
         /// Выводим информацию об машине
         /// </summary>
@@ -84,6 +96,7 @@ namespace automotive.Classes
                 Console.Write("=");
             }
         }
+
         /// <summary>
         /// Ломаем колёса машины
         /// </summary>

@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace automotive.Classes
+﻿namespace automotive.Classes
 {
     /// <summary>
     /// Тип данных для используемый в качестве года выпуска транспорта.
