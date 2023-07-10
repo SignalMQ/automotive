@@ -1,13 +1,13 @@
 ﻿using System.Drawing;
 
-namespace automotive.Classes
+namespace automotive.Models
 {
-    public class MotoModel : Transport
+    public class Moto : Transport
     {
         /// <summary>
         /// Базовый конструктор для класса мотоцикла
         /// </summary>
-        public MotoModel(string name, string model, Fuel fuel, Year year, Color color, int radCount = 2)
+        public Moto(string name, string model, Fuel fuel, Year year, Color color, int radCount = 2)
         {
 
         }
