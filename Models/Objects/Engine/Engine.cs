@@ -9,6 +9,9 @@
         /// Тип топлива, на котором работает двигатель транспорта
         /// </summary>
         public FuelType    EngineFuel           { get; set; }
+        /// <summary>
+        /// Сколько лошадей издаёт двигатель
+        /// </summary>
         public double      EnginePower          { get; set; }
         public string      EngineModel          { get; set; } = string.Empty;
         public double      EngineCapacity       { get; set; }
