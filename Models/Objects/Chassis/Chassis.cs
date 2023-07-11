@@ -6,7 +6,7 @@
     public class Chassis
     {
         public MaterialType ChassisMaterial   { get; set; }
-        public int          ChassisWheelCount { get; set; }
-
+        public static int   ChassisWheelCount { get; set; }
+        public Wheel[]      Wheel             { get; set; } = new Wheel[ChassisWheelCount];
     }
 }
