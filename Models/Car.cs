@@ -7,6 +7,6 @@ namespace automotive.Models
     /// </summary>
     public class Car : Transport, ICar
     {
-        
+        public int CarPosition { get; set; }
     }
 }

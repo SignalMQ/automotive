@@ -11,6 +11,7 @@ namespace automotive.Models
     public class Transport : ITransport
     {
         public string  TransportName    { get; set; } = string.Empty;
+        public string  TransportModel   { get; set; } = string.Empty;
         public int     TransportYear    { get; set; }
         public int     TransportMileage { get; set; }
         public Engine  TransportEngine  { get; set; } = new();
