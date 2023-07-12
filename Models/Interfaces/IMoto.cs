@@ -1,6 +1,6 @@
 ﻿namespace automotive.Models.Interfaces
 {
-    public interface IMoto
+    public interface IMoto : ITransport
     {
 
     }

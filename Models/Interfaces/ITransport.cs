@@ -1,6 +1,6 @@
-﻿using automotive.Models.Objects;
-using automotive.Models.Objects.Chassis;
-using automotive.Models.Objects.Engine;
+﻿using automotive.Objects;
+using automotive.Objects.Chassis;
+using automotive.Objects.Engine;
 
 namespace automotive.Models.Interfaces
 {

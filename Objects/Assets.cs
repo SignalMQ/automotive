@@ -1,4 +1,4 @@
-﻿namespace automotive.Models.Objects
+﻿namespace automotive.Objects
 {
     /// <summary>
     /// Тип горючего транспорта
