@@ -7,11 +7,11 @@ using System.Drawing;
 
 namespace automotive
 {
-    internal class Program
+    public class Sample
     {
-        static void Main()
+        static object SampleVoid(Car car)
         {
-            Car car = new Car()
+            car = new Car()
             {
                 CarPosition = 1,
                 TransportName = "Bestune",
@@ -57,8 +57,8 @@ namespace automotive
             };
 
             var json = JsonConvert.SerializeObject(car, Formatting.Indented);
-            
-            Console.WriteLine(json);
+
+            return json;
         }
     }
 }
