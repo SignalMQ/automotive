@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "y4HTH2Gjz4YkzWw8gIePxJ6uUf6gh2jrWJXYydYL5iOavzFGDa2xnIaJIB/0Zt2BaSYyRYKFKRFZRvgknlab4g==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\s.matnazarov\\Desktop\\Projects\\automotive\\automotive-front\\automotive-front.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s.matnazarov\\.nuget\\packages\\materialskin.2.rtl\\2.3.1.1\\materialskin.2.rtl.2.3.1.1.nupkg.sha512",
+    "C:\\Users\\s.matnazarov\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
