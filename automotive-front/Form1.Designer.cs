@@ -63,14 +63,14 @@
             ChassisWheelCount = new DataGridViewTextBoxColumn();
             groupBox4 = new GroupBox();
             dataGridView5 = new DataGridView();
-            groupBox5 = new GroupBox();
-            dataGridView6 = new DataGridView();
-            WheelMaterialType = new DataGridViewTextBoxColumn();
-            WheelDiameter = new DataGridViewTextBoxColumn();
             Height = new DataGridViewTextBoxColumn();
             Width = new DataGridViewTextBoxColumn();
             Color = new DataGridViewTextBoxColumn();
             Material = new DataGridViewTextBoxColumn();
+            groupBox5 = new GroupBox();
+            dataGridView6 = new DataGridView();
+            WheelMaterialType = new DataGridViewTextBoxColumn();
+            WheelDiameter = new DataGridViewTextBoxColumn();
             tabPage2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -394,6 +394,30 @@
             dataGridView5.Size = new Size(982, 224);
             dataGridView5.TabIndex = 0;
             // 
+            // Height
+            // 
+            Height.DataPropertyName = "Height";
+            Height.HeaderText = "Height";
+            Height.Name = "Height";
+            // 
+            // Width
+            // 
+            Width.DataPropertyName = "Width";
+            Width.HeaderText = "Width";
+            Width.Name = "Width";
+            // 
+            // Color
+            // 
+            Color.DataPropertyName = "Color";
+            Color.HeaderText = "Color";
+            Color.Name = "Color";
+            // 
+            // Material
+            // 
+            Material.DataPropertyName = "Material";
+            Material.HeaderText = "Material";
+            Material.Name = "Material";
+            // 
             // groupBox5
             // 
             groupBox5.Controls.Add(dataGridView6);
@@ -428,30 +452,6 @@
             WheelDiameter.DataPropertyName = "WheelDiameter";
             WheelDiameter.HeaderText = "WheelDiameter";
             WheelDiameter.Name = "WheelDiameter";
-            // 
-            // Height
-            // 
-            Height.DataPropertyName = "Height";
-            Height.HeaderText = "Height";
-            Height.Name = "Height";
-            // 
-            // Width
-            // 
-            Width.DataPropertyName = "Width";
-            Width.HeaderText = "Width";
-            Width.Name = "Width";
-            // 
-            // Color
-            // 
-            Color.DataPropertyName = "Color";
-            Color.HeaderText = "Color";
-            Color.Name = "Color";
-            // 
-            // Material
-            // 
-            Material.DataPropertyName = "Material";
-            Material.HeaderText = "Material";
-            Material.Name = "Material";
             // 
             // Form1
             // 

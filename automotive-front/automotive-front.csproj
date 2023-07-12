@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaterialSkin.2.RTL" Version="2.3.1.1" />
+    <PackageReference Include="Winform.Metroframework.Install" Version="1.4.0" />
   </ItemGroup>
 
   <ItemGroup>

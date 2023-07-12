@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "MaterialSkin.2.RTL/2.3.1.1": {
-        "runtime": {
-          "lib/net5.0-windows7.0/MaterialSkin.dll": {
-            "assemblyVersion": "2.3.1.1",
-            "fileVersion": "2.3.1.1"
-          }
-        }
-      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -21,23 +13,81 @@
             "fileVersion": "13.0.3.27908"
           }
         }
+      },
+      "Winform.Metroframework/1.4.0": {
+        "runtime": {
+          "lib/net20/MetroFramework.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
+        }
+      },
+      "Winform.Metroframework.Design/1.4.0": {
+        "dependencies": {
+          "Winform.Metroframework": "1.4.0"
+        },
+        "runtime": {
+          "lib/net20/MetroFramework.Design.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
+        }
+      },
+      "Winform.Metroframework.Fonts/1.4.0": {
+        "dependencies": {
+          "Winform.Metroframework": "1.4.0"
+        },
+        "runtime": {
+          "lib/net20/MetroFramework.Fonts.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
+        }
+      },
+      "Winform.Metroframework.Install/1.4.0": {
+        "dependencies": {
+          "Winform.Metroframework": "1.4.0",
+          "Winform.Metroframework.Design": "1.4.0",
+          "Winform.Metroframework.Fonts": "1.4.0"
+        }
       }
     }
   },
   "libraries": {
-    "MaterialSkin.2.RTL/2.3.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+mAOOWqXsAxvRX4z3kFQhnl3vWiZ1e58UISjkJ31zZIX7Ujkq0BuWmsfgB0jC5ztKnJ7xyN76abmopaEHzvwkA==",
-      "path": "materialskin.2.rtl/2.3.1.1",
-      "hashPath": "materialskin.2.rtl.2.3.1.1.nupkg.sha512"
-    },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "Winform.Metroframework/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AE0+76L9/xZU65tWFR27zWTLqT2nytMMOK2nhNCc7K3ksykeJLWSsdhEnx2Xh2I54Fe4vReyRqz2dc5XQ/6oFQ==",
+      "path": "winform.metroframework/1.4.0",
+      "hashPath": "winform.metroframework.1.4.0.nupkg.sha512"
+    },
+    "Winform.Metroframework.Design/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zsTf8YTxG351uB4KB5ya4364g7IOqwuC3vA9vHlyQzqJPKtyDreT52ZsdbOK15kQwpgBDaslMT2pV1P2RJvyWA==",
+      "path": "winform.metroframework.design/1.4.0",
+      "hashPath": "winform.metroframework.design.1.4.0.nupkg.sha512"
+    },
+    "Winform.Metroframework.Fonts/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aRkxGRb77gjAbqSOMA2IEusFzZosKyQ1VkMJoQefk+5jhGDMFcpIJE5OuAeegCX+/5JSaQAB4zvAIDV5FVPesw==",
+      "path": "winform.metroframework.fonts/1.4.0",
+      "hashPath": "winform.metroframework.fonts.1.4.0.nupkg.sha512"
+    },
+    "Winform.Metroframework.Install/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wXC9UUxgzh5VMzvFj7T0JITMNtCiuPaPn2kqm9sbpn3UnVbIExNL+HGNNwpbUbqcBe9Ou79QLTJg1yqRzFQm9w==",
+      "path": "winform.metroframework.install/1.4.0",
+      "hashPath": "winform.metroframework.install.1.4.0.nupkg.sha512"
     }
   }
 }

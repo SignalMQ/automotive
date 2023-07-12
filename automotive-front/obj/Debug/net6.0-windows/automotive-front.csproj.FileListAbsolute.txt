@@ -25,7 +25,6 @@ D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\automotive-front.runtimeconfig.json
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\automotive-front.dll
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\automotive-front.pdb
-D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\MaterialSkin.dll
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\automotive.dll
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\automotive.pdb
@@ -42,3 +41,6 @@ D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\obj\Debug\net
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\obj\Debug\net6.0-windows\automotive-front.pdb
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\obj\Debug\net6.0-windows\automotive-front.genruntimeconfig.cache
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\obj\Debug\net6.0-windows\ref\automotive-front.dll
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\MetroFramework.dll
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\MetroFramework.Design.dll
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive-front\bin\Debug\net6.0-windows\MetroFramework.Fonts.dll

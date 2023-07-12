@@ -44,9 +44,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "MaterialSkin.2.RTL": {
+            "Winform.Metroframework.Install": {
               "target": "Package",
-              "version": "[2.3.1.1, )"
+              "version": "[1.4.0, )"
             }
           },
           "imports": [

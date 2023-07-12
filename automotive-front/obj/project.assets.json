@@ -2,18 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "MaterialSkin.2.RTL/2.3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0-windows7.0/MaterialSkin.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0-windows7.0/MaterialSkin.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
-      },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
@@ -25,6 +13,47 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Winform.Metroframework/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net20/MetroFramework.dll": {}
+        }
+      },
+      "Winform.Metroframework.Design/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Winform.Metroframework": "1.4.0"
+        },
+        "compile": {
+          "lib/net20/MetroFramework.Design.dll": {}
+        },
+        "runtime": {
+          "lib/net20/MetroFramework.Design.dll": {}
+        }
+      },
+      "Winform.Metroframework.Fonts/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Winform.Metroframework": "1.4.0"
+        },
+        "compile": {
+          "lib/net20/MetroFramework.Fonts.dll": {}
+        },
+        "runtime": {
+          "lib/net20/MetroFramework.Fonts.dll": {}
+        }
+      },
+      "Winform.Metroframework.Install/1.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Winform.Metroframework": "1.4.0",
+          "Winform.Metroframework.Design": "1.4.0",
+          "Winform.Metroframework.Fonts": "1.4.0"
         }
       },
       "automotive/1.0.0": {
@@ -43,23 +72,6 @@
     }
   },
   "libraries": {
-    "MaterialSkin.2.RTL/2.3.1.1": {
-      "sha512": "+mAOOWqXsAxvRX4z3kFQhnl3vWiZ1e58UISjkJ31zZIX7Ujkq0BuWmsfgB0jC5ztKnJ7xyN76abmopaEHzvwkA==",
-      "type": "package",
-      "path": "materialskin.2.rtl/2.3.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net461/MaterialSkin.dll",
-        "lib/net472/MaterialSkin.dll",
-        "lib/net48/MaterialSkin.dll",
-        "lib/net5.0-windows7.0/MaterialSkin.dll",
-        "materialskin.2.rtl.2.3.1.1.nupkg.sha512",
-        "materialskin.2.rtl.nuspec",
-        "nugetIcon.png"
-      ]
-    },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -90,6 +102,53 @@
         "packageIcon.png"
       ]
     },
+    "Winform.Metroframework/1.4.0": {
+      "sha512": "AE0+76L9/xZU65tWFR27zWTLqT2nytMMOK2nhNCc7K3ksykeJLWSsdhEnx2Xh2I54Fe4vReyRqz2dc5XQ/6oFQ==",
+      "type": "package",
+      "path": "winform.metroframework/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/MetroFramework.dll",
+        "winform.metroframework.1.4.0.nupkg.sha512",
+        "winform.metroframework.nuspec"
+      ]
+    },
+    "Winform.Metroframework.Design/1.4.0": {
+      "sha512": "zsTf8YTxG351uB4KB5ya4364g7IOqwuC3vA9vHlyQzqJPKtyDreT52ZsdbOK15kQwpgBDaslMT2pV1P2RJvyWA==",
+      "type": "package",
+      "path": "winform.metroframework.design/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/MetroFramework.Design.dll",
+        "winform.metroframework.design.1.4.0.nupkg.sha512",
+        "winform.metroframework.design.nuspec"
+      ]
+    },
+    "Winform.Metroframework.Fonts/1.4.0": {
+      "sha512": "aRkxGRb77gjAbqSOMA2IEusFzZosKyQ1VkMJoQefk+5jhGDMFcpIJE5OuAeegCX+/5JSaQAB4zvAIDV5FVPesw==",
+      "type": "package",
+      "path": "winform.metroframework.fonts/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/MetroFramework.Fonts.dll",
+        "winform.metroframework.fonts.1.4.0.nupkg.sha512",
+        "winform.metroframework.fonts.nuspec"
+      ]
+    },
+    "Winform.Metroframework.Install/1.4.0": {
+      "sha512": "wXC9UUxgzh5VMzvFj7T0JITMNtCiuPaPn2kqm9sbpn3UnVbIExNL+HGNNwpbUbqcBe9Ou79QLTJg1yqRzFQm9w==",
+      "type": "package",
+      "path": "winform.metroframework.install/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "winform.metroframework.install.1.4.0.nupkg.sha512",
+        "winform.metroframework.install.nuspec"
+      ]
+    },
     "automotive/1.0.0": {
       "type": "project",
       "path": "../automotive/automotive.csproj",
@@ -98,7 +157,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "MaterialSkin.2.RTL >= 2.3.1.1",
+      "Winform.Metroframework.Install >= 1.4.0",
       "automotive >= 1.0.0"
     ]
   },
@@ -145,9 +204,9 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "MaterialSkin.2.RTL": {
+          "Winform.Metroframework.Install": {
             "target": "Package",
-            "version": "[2.3.1.1, )"
+            "version": "[1.4.0, )"
           }
         },
         "imports": [
@@ -172,5 +231,37 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.411\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Winform.Metroframework 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Winform.Metroframework",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Winform.Metroframework.Design 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Winform.Metroframework.Design",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Winform.Metroframework.Fonts 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Winform.Metroframework.Fonts",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
