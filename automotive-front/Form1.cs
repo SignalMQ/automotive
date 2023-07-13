@@ -3,20 +3,19 @@ using automotive.Models;
 using automotive.Objects;
 using automotive.Objects.Chassis;
 using automotive.Objects.Engine;
-using System;
+using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 
 namespace automotive_front
 {
     public partial class Form1 : Form
     {
-        ObservableCollection<Car> cars = new ObservableCollection<Car>();
-        ObservableCollection<Chassis> chassis = new ObservableCollection<Chassis>();
-        ObservableCollection<Body> body = new ObservableCollection<Body>();
-        ObservableCollection<Engine> engine = new ObservableCollection<Engine>();
-        ObservableCollection<EngineState> engineState = new ObservableCollection<EngineState>();
-        ObservableCollection<Wheel> wheel = new ObservableCollection<Wheel>();
-
+        private ObservableCollection<Car> cars = new ObservableCollection<Car>();
+        private ObservableCollection<Chassis> chassis = new ObservableCollection<Chassis>();
+        private ObservableCollection<Body> body = new ObservableCollection<Body>();
+        private ObservableCollection<Engine> engine = new ObservableCollection<Engine>();
+        private ObservableCollection<EngineState> engineState = new ObservableCollection<EngineState>();
+        private ObservableCollection<Wheel> wheel = new ObservableCollection<Wheel>();
 
         public Form1()
         {
@@ -25,7 +24,7 @@ namespace automotive_front
             this.Load += Form1_Load;
         }
 
-        private void Form1_Load(object? sender, EventArgs e)
+        private string PrepareJson()
         {
             List<Car> sampleCars = new()
             {
@@ -51,13 +50,25 @@ namespace automotive_front
                 Sample.SampleData(),
             };
 
-            foreach (var car in sampleCars)
+            string result = JsonConvert.SerializeObject(sampleCars, Formatting.None);
+
+            return result;
+        }
+
+        private void Form1_Load(object? sender, EventArgs e)
+        {
+            var serialized = PrepareJson();
+
+            var deserialized = JsonConvert.DeserializeObject<List<Car>>(serialized);
+
+            foreach (var car in deserialized)
             {
                 cars.Add(car);
-                chassis.Add(car.TransportChassis);
-                body.Add(car.TransportBody);
+                engine.Add(car.TransportEngine);
                 engine.Add(car.TransportEngine);
                 engineState.Add(car.TransportEngine.EngineState);
+                chassis.Add(car.TransportChassis);
+                body.Add(car.TransportBody);
                 wheel.Add(car.TransportChassis.Wheel);
             }
 

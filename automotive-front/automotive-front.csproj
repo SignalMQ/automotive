@@ -10,10 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Winform.Metroframework.Install" Version="1.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\automotive\automotive.csproj" />
   </ItemGroup>
 

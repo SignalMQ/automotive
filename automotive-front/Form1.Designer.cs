@@ -130,11 +130,13 @@
             // dataGridView3
             // 
             dataGridView3.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView3.BorderStyle = BorderStyle.None;
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Columns.AddRange(new DataGridViewColumn[] { IsStarted, FuelLevel, PowerLevel, AntiFreezeLevel, OilLevel, TransmissionOilLevel, BrakeFluidLevel });
             dataGridView3.Dock = DockStyle.Fill;
             dataGridView3.Location = new Point(3, 19);
             dataGridView3.Name = "dataGridView3";
+            dataGridView3.RowHeadersVisible = false;
             dataGridView3.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridView3.RowTemplate.Height = 25;
             dataGridView3.Size = new Size(982, 224);
@@ -196,11 +198,13 @@
             // dataGridView2
             // 
             dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView2.BorderStyle = BorderStyle.None;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { EnginePower, EngineModel, EngineFuel, EngineConsumption, EngineCilindersCount, EngineCapacity });
             dataGridView2.Dock = DockStyle.Fill;
             dataGridView2.Location = new Point(3, 19);
             dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersVisible = false;
             dataGridView2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridView2.RowTemplate.Height = 25;
             dataGridView2.Size = new Size(982, 223);
@@ -256,11 +260,14 @@
             // dataGridView1
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CarPosition, TransportName, TransportModel, TransportYear, TransportMileage });
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(3, 3);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(994, 503);
             dataGridView1.TabIndex = 1;
@@ -270,30 +277,35 @@
             CarPosition.DataPropertyName = "CarPosition";
             CarPosition.HeaderText = "CarPosition";
             CarPosition.Name = "CarPosition";
+            CarPosition.ReadOnly = true;
             // 
             // TransportName
             // 
             TransportName.DataPropertyName = "TransportName";
             TransportName.HeaderText = "TransportName";
             TransportName.Name = "TransportName";
+            TransportName.ReadOnly = true;
             // 
             // TransportModel
             // 
             TransportModel.DataPropertyName = "TransportModel";
             TransportModel.HeaderText = "TransportModel";
             TransportModel.Name = "TransportModel";
+            TransportModel.ReadOnly = true;
             // 
             // TransportYear
             // 
             TransportYear.DataPropertyName = "TransportYear";
             TransportYear.HeaderText = "TransportYear";
             TransportYear.Name = "TransportYear";
+            TransportYear.ReadOnly = true;
             // 
             // TransportMileage
             // 
             TransportMileage.DataPropertyName = "TransportMileage";
             TransportMileage.HeaderText = "TransportMileage";
             TransportMileage.Name = "TransportMileage";
+            TransportMileage.ReadOnly = true;
             // 
             // tabControl1
             // 
@@ -349,11 +361,13 @@
             // dataGridView4
             // 
             dataGridView4.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView4.BorderStyle = BorderStyle.None;
             dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView4.Columns.AddRange(new DataGridViewColumn[] { ChassisMaterial, ChassisWheelCount });
             dataGridView4.Dock = DockStyle.Fill;
             dataGridView4.Location = new Point(3, 19);
             dataGridView4.Name = "dataGridView4";
+            dataGridView4.RowHeadersVisible = false;
             dataGridView4.RowTemplate.Height = 25;
             dataGridView4.Size = new Size(485, 223);
             dataGridView4.TabIndex = 0;
@@ -385,11 +399,13 @@
             // dataGridView5
             // 
             dataGridView5.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView5.BorderStyle = BorderStyle.None;
             dataGridView5.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView5.Columns.AddRange(new DataGridViewColumn[] { Height, Width, Color, Material });
             dataGridView5.Dock = DockStyle.Fill;
             dataGridView5.Location = new Point(3, 19);
             dataGridView5.Name = "dataGridView5";
+            dataGridView5.RowHeadersVisible = false;
             dataGridView5.RowTemplate.Height = 25;
             dataGridView5.Size = new Size(982, 224);
             dataGridView5.TabIndex = 0;
@@ -432,11 +448,13 @@
             // dataGridView6
             // 
             dataGridView6.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView6.BorderStyle = BorderStyle.None;
             dataGridView6.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView6.Columns.AddRange(new DataGridViewColumn[] { WheelMaterialType, WheelDiameter });
             dataGridView6.Dock = DockStyle.Fill;
             dataGridView6.Location = new Point(3, 19);
             dataGridView6.Name = "dataGridView6";
+            dataGridView6.RowHeadersVisible = false;
             dataGridView6.RowTemplate.Height = 25;
             dataGridView6.Size = new Size(485, 223);
             dataGridView6.TabIndex = 0;
