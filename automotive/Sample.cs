@@ -2,22 +2,23 @@
 using automotive.Objects;
 using automotive.Objects.Chassis;
 using automotive.Objects.Engine;
-using Newtonsoft.Json;
 using System.Drawing;
 
 namespace automotive
 {
     public class Sample
     {
-        public static Car SampleVoid()
+        public static Car SampleData()
         {
+            Random random = new Random();
+
             Car car = new Car()
             {
                 CarPosition = 1,
                 TransportName = "Bestune",
                 TransportModel = "T55",
                 TransportYear = 2022,
-                TransportMileage = 330000,
+                TransportMileage = random.Next(330000),
                 TransportBody = new Body
                 {
                     Height = 4437,
@@ -45,13 +46,13 @@ namespace automotive
                     EnginePower = 160,
                     EngineState = new EngineState
                     {
-                        AntiFreezeLevel = 100,
-                        BrakeFluidLevel = 100,
-                        FuelLevel = 100,
-                        OilLevel = 100,
-                        PowerLevel = 100,
-                        TransmissionOilLevel = 100,
-                        IsStarted = false
+                        AntiFreezeLevel = random.Next(100),
+                        BrakeFluidLevel = random.Next(100),
+                        FuelLevel = random.Next(100),
+                        OilLevel = random.Next(100),
+                        PowerLevel = random.Next(100),
+                        TransmissionOilLevel = random.Next(100),
+                        IsStarted = random.Next(2) == 1 ? true : false
                     }
                 }
             };
