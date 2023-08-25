@@ -1,11 +1,11 @@
-﻿using automotive.Models.Interfaces;
+﻿using automotive.Models;
 
 namespace automotive.Services.Interfaces
 {
     public interface IRepairService
     {
-        public abstract bool Validate(ITransport transport);
-        public abstract string ViewProblems(ITransport transport);
-        public abstract void FixProblems(ref ITransport transport, object component);
+        public abstract bool Validate(Transport transport);
+        public abstract string ViewProblems(Transport transport);
+        public abstract void FixProblems(ref Transport transport, object component);
     }
 }

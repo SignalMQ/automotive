@@ -1,8 +1,6 @@
-﻿using automotive.Models.Interfaces;
-
-namespace automotive.Models
+﻿namespace automotive.Models
 {
-    public class Moto : Transport, IMoto
+    public class Moto : Transport
     {
 
     }

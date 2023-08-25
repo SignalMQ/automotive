@@ -12,7 +12,6 @@ D:\Users\s.matnazarov\Desktop\Projects\automotive\obj\Debug\net6.0-windows\autom
 D:\Users\s.matnazarov\Desktop\Projects\automotive\obj\Debug\net6.0-windows\ref\automotive.dll
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\bin\Debug\net6.0-windows\automotive.deps.json
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\bin\Debug\net6.0-windows\automotive.dll
-D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\bin\Debug\net6.0-windows\automotive.pdb
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\automotive.csproj.AssemblyReference.cache
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\automotive.GeneratedMSBuildEditorConfig.editorconfig
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\automotive.AssemblyInfoInputs.cache
@@ -20,5 +19,11 @@ D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-wi
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\automotive.csproj.CoreCompileInputs.cache
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\automotive.dll
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\refint\automotive.dll
-D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\automotive.pdb
 D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\ref\automotive.dll
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\bin\Debug\net6.0-windows\automotive.exe
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\bin\Debug\net6.0-windows\automotive.runtimeconfig.json
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\automotive.csproj.CopyComplete
+D:\Users\s.matnazarov\Desktop\Projects\automotive\automotive\obj\Debug\net6.0-windows\automotive.genruntimeconfig.cache

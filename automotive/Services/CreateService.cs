@@ -1,9 +1,13 @@
 ﻿using automotive.Models;
+using automotive.Services.Interfaces;
 
 namespace automotive.Services
 {
-    public abstract class CreateService
+    public class CreateService: ICreateService
     {
-        
+        Car CreateCar()
+        {
+            return new Car();
+        }
     }
 }
