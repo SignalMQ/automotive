@@ -1,7 +1,7 @@
-﻿using automotive.Models;
-using automotive.Services;
+﻿using automotive.Services;
 using automotive.Services.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 
 namespace automotive
 {
@@ -14,7 +14,8 @@ namespace automotive
         {
             services = new ServiceCollection()
                 .AddSingleton<ICreateService, CreateService>()
-                .AddTransient<IRepairService, RepairService>();
+                .AddTransient<IRepairService, RepairService>()
+                .AddSingleton<Sample>();
         }
 
         static void Main()
@@ -23,7 +24,11 @@ namespace automotive
 
             serviceProvider = services.BuildServiceProvider();
 
-            var car = serviceProvider?.GetService<Car>();
+            var sample = serviceProvider.GetRequiredService<Sample>();
+
+            string json = JsonConvert.SerializeObject(sample.SampleData(), Formatting.Indented);
+
+            Console.WriteLine(json);
         }
     }
 }
