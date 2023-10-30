@@ -56,3 +56,8 @@
 /automotive-front/obj/project.nuget.cache
 /automotive-front/obj/Debug/net6.0-windows/automotive-front.assets.cache
 /automotive-front/obj/Debug/net6.0-windows/automotive-front.designer.deps.json
+/automotive/obj/Debug/net6.0-windows/apphost.exe
+/automotive/obj/automotive.csproj.nuget.dgspec.json
+/automotive/obj/project.assets.json
+/automotive/obj/project.nuget.cache
+*.json
