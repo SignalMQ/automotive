@@ -5,9 +5,9 @@
     /// </summary>
     public class Car: Transport
     {
-        public int CarPosition { get; set; }
-        public int CarHeight   { get; set; }
-        public int CarWidth    { get; set; }
-        public int CarWeight   { get; set; }
+        public int Position { get; set; }
+        public int Height   { get; set; }
+        public int Width    { get; set; }
+        public int Weight   { get; set; }
     }
 }

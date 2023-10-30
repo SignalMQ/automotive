@@ -1,6 +1,4 @@
-﻿using automotive.Objects;
-
-namespace automotive.Objects.Chassis
+﻿namespace automotive.Objects.Chassis
 {
     public class Wheel
     {

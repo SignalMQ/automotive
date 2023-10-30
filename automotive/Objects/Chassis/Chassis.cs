@@ -1,6 +1,4 @@
-﻿using automotive.Objects;
-
-namespace automotive.Objects.Chassis
+﻿namespace automotive.Objects.Chassis
 {
     /// <summary>
     /// Класс для определения типа подвески для транспорта
