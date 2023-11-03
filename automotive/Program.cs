@@ -1,7 +1,7 @@
-﻿using automotive.Services;
-using automotive.Services.Interfaces;
+﻿using automotive.Contexts;
+using automotive.Contexts.Interfaces;
+using automotive.Services;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
 
 namespace automotive
 {
@@ -13,8 +13,8 @@ namespace automotive
         private static void ConfigureServices()
         {
             services = new ServiceCollection()
-                .AddSingleton<ICreateService, CreateService>()
-                .AddTransient<IRepairService, RepairService>()
+                .AddDbContext<BaseContext>()
+                .AddSingleton<IBaseRepository, BaseRepository>()
                 .AddSingleton<Sample>();
         }
 
@@ -24,11 +24,12 @@ namespace automotive
 
             serviceProvider = services.BuildServiceProvider();
 
+            IBaseRepository baseRepository = new BaseRepository();
+
             var sample = serviceProvider.GetRequiredService<Sample>();
 
-            string json = JsonConvert.SerializeObject(sample.SampleData(), Formatting.Indented);
-
-            Console.WriteLine(json);
+            baseRepository.AddAsync(sample.SampleData());
+            baseRepository.SaveChanges();
         }
     }
 }
