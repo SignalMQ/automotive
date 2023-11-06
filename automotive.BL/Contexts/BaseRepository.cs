@@ -1,6 +1,6 @@
-﻿using automotive.Contexts.Interfaces;
+﻿using automotive.BL.Contexts.Interfaces;
 
-namespace automotive.Contexts
+namespace automotive.BL.Contexts
 {
     internal class BaseRepository: IBaseRepository
     {

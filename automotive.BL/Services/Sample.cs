@@ -1,10 +1,11 @@
-﻿using automotive.Models;
-using automotive.Enums;
-using automotive.Models.Body;
-using automotive.Models.Chassis;
-using automotive.Models.Engine;
+﻿using automotive.BL.Models;
+using automotive.BL.Enums;
+using automotive.BL.Models.Body;
+using automotive.BL.Models.Chassis;
+using automotive.BL.Models.Engine;
+using System.Drawing;
 
-namespace automotive.Services
+namespace automotive.BL.Services
 {
     public class Sample
     {

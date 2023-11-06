@@ -1,4 +1,4 @@
-﻿namespace automotive.Models
+﻿namespace automotive.BL.Models
 {
     public class Moto : Transport
     {

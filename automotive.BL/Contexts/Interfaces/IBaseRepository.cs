@@ -1,4 +1,4 @@
-﻿namespace automotive.Contexts.Interfaces
+﻿namespace automotive.BL.Contexts.Interfaces
 {
     internal interface IBaseRepository
     {

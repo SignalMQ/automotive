@@ -1,4 +1,4 @@
-﻿namespace automotive.Enums
+﻿namespace automotive.BL.Enums
 {
     /// <summary>
     /// Тип горючего транспорта
@@ -18,7 +18,7 @@
     {
         Mechanic,
         Auto,
-        Semi_auto,
+        SemiAuto,
         None
     }
 

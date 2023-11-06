@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace automotive.Migrations
+namespace automotive.BL.Migrations
 {
     /// <inheritdoc />
     public partial class alter_table_transports_remove_clearance_huirance_column : Migration

@@ -1,4 +1,4 @@
-﻿namespace automotive.Models.Chassis
+﻿namespace automotive.BL.Models.Chassis
 {
     public class Wheel
     {

@@ -1,4 +1,4 @@
-﻿namespace automotive.Models.Engine
+﻿namespace automotive.BL.Models.Engine
 {
     /// <summary>
     /// Класс для определения двигателя транспорта

@@ -1,4 +1,4 @@
-﻿namespace automotive.Models
+﻿namespace automotive.BL.Models
 {
     /// <summary>
     /// Базовый класс для транспорта

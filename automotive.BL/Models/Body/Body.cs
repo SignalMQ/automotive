@@ -1,4 +1,4 @@
-﻿namespace automotive.Models.Body
+﻿namespace automotive.BL.Models.Body
 {
     public class Body
     {

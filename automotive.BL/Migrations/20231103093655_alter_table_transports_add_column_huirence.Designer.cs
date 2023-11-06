@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using automotive.Contexts;
+using automotive.BL.Contexts;
 
 #nullable disable
 
-namespace automotive.Migrations
+namespace automotive.BL.Migrations
 {
     [DbContext(typeof(BaseContext))]
     [Migration("20231103093655_alter_table_transports_add_column_huirence")]
@@ -19,7 +19,7 @@ namespace automotive.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
 
-            modelBuilder.Entity("automotive.Models.Body.Body", b =>
+            modelBuilder.Entity("automotive.BL.Models.Body.Body", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,7 +42,7 @@ namespace automotive.Migrations
                     b.ToTable("Body");
                 });
 
-            modelBuilder.Entity("automotive.Models.Car", b =>
+            modelBuilder.Entity("automotive.BL.Models.Car", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -98,7 +98,7 @@ namespace automotive.Migrations
                     b.ToTable("Transports");
                 });
 
-            modelBuilder.Entity("automotive.Models.Chassis.Chassis", b =>
+            modelBuilder.Entity("automotive.BL.Models.Chassis.Chassis", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -120,7 +120,7 @@ namespace automotive.Migrations
                     b.ToTable("Chassis");
                 });
 
-            modelBuilder.Entity("automotive.Models.Chassis.Wheel", b =>
+            modelBuilder.Entity("automotive.BL.Models.Chassis.Wheel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -137,7 +137,7 @@ namespace automotive.Migrations
                     b.ToTable("Wheel");
                 });
 
-            modelBuilder.Entity("automotive.Models.Engine.Engine", b =>
+            modelBuilder.Entity("automotive.BL.Models.Engine.Engine", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -171,7 +171,7 @@ namespace automotive.Migrations
                     b.ToTable("Engine");
                 });
 
-            modelBuilder.Entity("automotive.Models.Engine.EngineState", b =>
+            modelBuilder.Entity("automotive.BL.Models.Engine.EngineState", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -203,21 +203,21 @@ namespace automotive.Migrations
                     b.ToTable("EngineState");
                 });
 
-            modelBuilder.Entity("automotive.Models.Car", b =>
+            modelBuilder.Entity("automotive.BL.Models.Car", b =>
                 {
-                    b.HasOne("automotive.Models.Body.Body", "Body")
+                    b.HasOne("automotive.BL.Models.Body.Body", "Body")
                         .WithMany()
                         .HasForeignKey("BodyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("automotive.Models.Chassis.Chassis", "Chassis")
+                    b.HasOne("automotive.BL.Models.Chassis.Chassis", "Chassis")
                         .WithMany()
                         .HasForeignKey("ChassisId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("automotive.Models.Engine.Engine", "Engine")
+                    b.HasOne("automotive.BL.Models.Engine.Engine", "Engine")
                         .WithMany()
                         .HasForeignKey("EngineId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -230,9 +230,9 @@ namespace automotive.Migrations
                     b.Navigation("Engine");
                 });
 
-            modelBuilder.Entity("automotive.Models.Chassis.Chassis", b =>
+            modelBuilder.Entity("automotive.BL.Models.Chassis.Chassis", b =>
                 {
-                    b.HasOne("automotive.Models.Chassis.Wheel", "Wheel")
+                    b.HasOne("automotive.BL.Models.Chassis.Wheel", "Wheel")
                         .WithMany()
                         .HasForeignKey("WheelId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -241,9 +241,9 @@ namespace automotive.Migrations
                     b.Navigation("Wheel");
                 });
 
-            modelBuilder.Entity("automotive.Models.Engine.Engine", b =>
+            modelBuilder.Entity("automotive.BL.Models.Engine.Engine", b =>
                 {
-                    b.HasOne("automotive.Models.Engine.EngineState", "State")
+                    b.HasOne("automotive.BL.Models.Engine.EngineState", "State")
                         .WithMany()
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade)

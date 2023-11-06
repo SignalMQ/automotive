@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace automotive.Migrations
+namespace automotive.BL.Migrations
 {
     /// <inheritdoc />
     public partial class test : Migration
