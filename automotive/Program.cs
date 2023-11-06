@@ -18,6 +18,7 @@ namespace automotive
                 .UsePlatformDetect()
                 .WithInterFont()
                 .LogToTrace()
-                .UseSkia();
+                .UseSkia()
+                .UseX11();
     }
 }
