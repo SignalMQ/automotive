@@ -1,10 +1,14 @@
-﻿namespace automotive.BL.Contexts.Interfaces
+﻿using System.Linq.Expressions;
+
+namespace automotive.BL.Contexts.Interfaces
 {
-    internal interface IBaseRepository
+    internal interface IBaseRepository<T> 
+        where T : class
     {
-        Task AddAsync<T>(T value) where T : class;
-        Task RemoveAsync<T>(T value) where T : class;
-        Task UpdateAsync<T>(T value) where T : class;
-        Task SaveChanges();
+        Task <IEnumerable<T>> Get(Expression<Func<T, bool>> expression);
+        void Add(T value);
+        void Remove(T value);
+        void Update(T value);
+        Task SaveChangesAsync();
     }
 }

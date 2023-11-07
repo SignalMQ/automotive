@@ -14,11 +14,18 @@ namespace automotive
 
         // Avalonia configuration, don't remove; also used by visual designer.
         public static AppBuilder BuildAvaloniaApp()
-            => AppBuilder.Configure<App>()
-                .UsePlatformDetect()
-                .WithInterFont()
-                .LogToTrace()
-                .UseSkia()
-                .UseX11();
+        {
+            var appBuilder = AppBuilder.Configure<App>();
+            appBuilder.UsePlatformDetect();
+            appBuilder.WithInterFont();
+            appBuilder.LogToTrace();
+            appBuilder.UseSkia();
+            if (OperatingSystem.IsLinux())
+            {
+                appBuilder.UseX11();
+            }
+            return appBuilder;
+        }
+            
     }
 }
