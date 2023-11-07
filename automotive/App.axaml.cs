@@ -1,7 +1,7 @@
+using automotive.Views;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using automotive.Views;
 
 namespace automotive
 {
@@ -10,7 +10,6 @@ namespace automotive
         public override void Initialize()
         {
             AvaloniaXamlLoader.Load(this);
-
         }
 
         public override void OnFrameworkInitializationCompleted()

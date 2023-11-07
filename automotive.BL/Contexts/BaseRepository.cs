@@ -1,33 +1,42 @@
 ﻿using automotive.BL.Contexts.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace automotive.BL.Contexts
 {
-    internal class BaseRepository: IBaseRepository
-    {
-        private readonly BaseContext baseContext = new();
+    internal class BaseRepository<T> : IBaseRepository<T>
+		where T : class
+	{
+		private readonly DbContext _dbContext;
 
-        public Task AddAsync<T>(T value) where T : class
+		public BaseRepository(DbContext dbContext) 
         {
-            baseContext.Add(value);
-            return Task.CompletedTask;
+			_dbContext = dbContext;
+		}
+
+        public async Task<IEnumerable<T>> Get(Expression<Func<T, bool>> expression) 
+        {
+            return await _dbContext.Set<T>().Where(expression).ToListAsync();
+		}
+
+        public void Add(T value) 
+        {
+		    _dbContext.Set<T>().Add(value);
         }
 
-        public Task RemoveAsync<T>(T value) where T: class
+        public void Remove(T value)
         {
-            baseContext.Remove(value);
-            return Task.CompletedTask;
+			_dbContext.Set<T>().Remove(value);
         }
 
-        public Task UpdateAsync<T>(T value) where T: class
+        public void Update(T value) 
         {
-            baseContext.Update(value);
-            return Task.CompletedTask;
+			_dbContext.Set<T>().Update(value);
         }
 
-        public Task SaveChanges()
+        public async Task SaveChangesAsync()
         {
-            baseContext.SaveChanges();
-            return Task.CompletedTask;
+			await _dbContext.SaveChangesAsync();
         }
     }
 }
