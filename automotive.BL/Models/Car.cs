@@ -1,5 +1,8 @@
-﻿namespace automotive.BL.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace automotive.BL.Models
 {
+    [Table("Car")]
     /// <summary>
     /// Базовый класс для автомобилья
     /// </summary>

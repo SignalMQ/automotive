@@ -2,7 +2,7 @@
 
 namespace automotive.BL.Contexts.Interfaces
 {
-    internal interface IBaseRepository<T> 
+    public interface IBaseRepository<T> 
         where T : class
     {
         Task <IEnumerable<T>> Get(Expression<Func<T, bool>> expression);

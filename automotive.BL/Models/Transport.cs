@@ -1,5 +1,8 @@
-﻿namespace automotive.BL.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace automotive.BL.Models
 {
+    [Table("Transport")]
     /// <summary>
     /// Базовый класс для транспорта
     /// </summary>

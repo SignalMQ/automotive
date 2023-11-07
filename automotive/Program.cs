@@ -20,12 +20,13 @@ namespace automotive
             appBuilder.WithInterFont();
             appBuilder.LogToTrace();
             appBuilder.UseSkia();
+            // used for linux distributions
             if (OperatingSystem.IsLinux())
             {
                 appBuilder.UseX11();
             }
+
             return appBuilder;
         }
-            
     }
 }

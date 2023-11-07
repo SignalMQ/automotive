@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace automotive.BL.Contexts
 {
-    internal class BaseRepository<T> : IBaseRepository<T>
+    public class BaseRepository<T> : IBaseRepository<T>
 		where T : class
 	{
 		private readonly DbContext _dbContext;
